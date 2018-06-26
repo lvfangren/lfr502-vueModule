@@ -1,0 +1,32 @@
+{
+  "测试路由文档部分":[
+    {
+      "name":"test",
+      "path":"/test",
+      "desc":"测试"
+    },
+    {
+      "name":"LVF",
+      "path":"/LVF",
+      "desc":"测试2"
+    },
+    {
+      "name":"guid",
+      "path":"/guid",
+      "desc":"介绍"
+    }
+  ],
+  "测试路由组件部分":[
+    {
+      "desc":"测试组件",
+      "path":"/component",
+      "items":[
+        {
+          "desc":"测试组件1",
+          "path":"/alert",
+          "name":"alert"
+        }
+      ]
+    }
+  ]
+}

@@ -4,7 +4,7 @@ const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
 
-const MarkdownItContainer = require('markdown-it-container')
+const MarkdownItContainer = require('markdown-it')
 
 const vueMarkdown = {
   preprocess: (MarkdownIt, source) => {
@@ -94,7 +94,7 @@ module.exports = {
   },
   module: {
     rules: [
-      ...(config.dev.useEslint ? [createLintingRule()] : []),
+      // ...(config.dev.useEslint ? [createLintingRule()] : []),
       {
         test: /\.vue$/,
         loader: 'vue-loader',
