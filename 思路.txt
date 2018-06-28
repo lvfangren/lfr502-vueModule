@@ -11,4 +11,5 @@
 
 
 出现问题：
-    文档没有代码显示功能，思考：markdown配置出了问题或者demo-block.vue文件的问题
+    文档没有代码显示功能，思考：markdown配置出了问题或者demo-block.vue文件的问题,
+    (over:缺少转换成DOM字符串的strip-tags.js的功能文件，文件引入后报错说utils.wrapCustomClass没找到，问题是utils.js文件未加入此功能函数，添加后webpack-server重启一次即可)

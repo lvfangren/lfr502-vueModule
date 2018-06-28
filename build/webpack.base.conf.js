@@ -4,7 +4,10 @@ const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
 
-const MarkdownItContainer = require('markdown-it')
+const MarkdownItContainer = require('markdown-it-container')
+const striptags = require('./strip-tags')
+
+
 
 const vueMarkdown = {
   preprocess: (MarkdownIt, source) => {
@@ -54,8 +57,6 @@ const vueMarkdown = {
     }]
   ]
 }
-
-
 
 
 function resolve (dir) {
@@ -130,8 +131,9 @@ module.exports = {
         }
       },
       {
-        test:/\.md$/,
-        loader:'vue-markdown-loader'
+        test: /\.md$/,
+        loader: 'vue-markdown-loader',
+        options: vueMarkdown
       }
     ]
   },
