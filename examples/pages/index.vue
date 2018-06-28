@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="tell-index">
+  <div class="pg-index">
     <div class="index-container">
         <img src="../assets/logo.png" alt="">
         <p>这是LFR502的VUE组件框!</p>

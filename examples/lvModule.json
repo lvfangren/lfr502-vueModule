@@ -14,6 +14,11 @@
       "name":"guid",
       "path":"/guid",
       "desc":"介绍"
+    },
+    {
+      "name":"index",
+      "path":"/",
+      "type":"pages"
     }
   ],
   "测试路由组件部分":[

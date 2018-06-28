@@ -43,6 +43,7 @@ export default {
         display: flex;
         align-items: center;
         color: #5e6d82;
+        padding: 0 35%;
         img{
           border-radius: 100%;
           margin-right: 10px;
